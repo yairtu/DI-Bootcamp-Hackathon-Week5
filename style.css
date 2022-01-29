@@ -13,7 +13,7 @@ body {
 .wrapper {
   box-shadow: 0px 0px 20px -10px gray;
   width: 50vw;
-  height: fit-content;
+  height: 60vh;
   margin-top: 20vh;
 }
 
@@ -39,7 +39,7 @@ body {
   color: white;
 }
 
-.tablinks:active {
+.active {
   font-weight: bold;
   border-bottom: cyan 3px solid;
 }
@@ -66,4 +66,16 @@ input {
 
 .tab-content {
   padding: 20px;
+}
+
+.tab-display {
+  display: none;
+}
+
+h6 {
+  color: lightgray;
+}
+
+.inputType2 {
+  width: 100%;
 }
