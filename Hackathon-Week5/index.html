@@ -12,8 +12,8 @@
   <body>
     <h1>Currency Converter</h1>
     <div class="wrapper">
-      <div class="currency1div">
-        <select id="currency1" name="currency">
+      <div class="currency">
+        <select id="currencyOne">
           <option>select currency</option>
           <option value="AFN">Afghan Afghani</option>
           <option value="ALL">Albanian Lek</option>
@@ -180,10 +180,11 @@
           <option value="YER">Yemeni Rial</option>
           <option value="ZMK">Zambian Kwacha</option>
         </select>
-        <input class="currency1value" type="number" placeholder="0" />
+        <input id="currencyOneInput" type="number" value="1" placeholder="0" />
       </div>
-      <div class="currency2div">
-        <select id="currency2" name="currency">
+      <div id="rate"></div>
+      <div class="currency">
+        <select id="currencyTwo" name="currency">
           <option>select currency</option>
           <option value="AFN">Afghan Afghani</option>
           <option value="ALL">Albanian Lek</option>
@@ -350,7 +351,7 @@
           <option value="YER">Yemeni Rial</option>
           <option value="ZMK">Zambian Kwacha</option>
         </select>
-        <input class="currency2value" type="number" placeholder="0" />
+        <input type="number" id="currencyTwoInput" placeholder="0"/>
       </div>
     </div>
     <script src="script.js"></script>
