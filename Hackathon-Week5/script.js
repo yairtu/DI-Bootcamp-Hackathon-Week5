@@ -9,12 +9,24 @@ console.log(currencyTwo);
 console.log(amountOne);
 console.log(amountTwo);
 
-
+let calculateExchange = () => {
+    const amountOneValue = currencyOne.value;
+    let amountTwoValue = currencyTwo.value;
+    
+    let api_url = (`https://v6.exchangerate-api.com/v6/596897f4ad88452b228ae09b/latest/${amountOneValue}`);
+    
+    fetch(api_url)
+      .then((result) => result.json())
+      .then((json) => {
+          //checking json
+          console.log(json);
+      });
+}
 
 //event listener for dropdown and inputs
-currencyOne.addEventListener("onchange", calculateExchange);
-currencyTwo.addEventListener("onchange", calculateExchange);
-amountOne.addEventListener("oninput", calculateExchange);
-amountTwo.addEventListener("oninput", calculateExchange);
+currencyOne.addEventListener("change", calculateExchange);
+currencyTwo.addEventListener("change", calculateExchange);
+amountOne.addEventListener("input", calculateExchange);
+amountTwo.addEventListener("input", calculateExchange);
 
 
