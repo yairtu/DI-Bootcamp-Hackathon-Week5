@@ -1,0 +1,81 @@
+body {
+  margin: auto;
+  height: 100vh;
+  background-image: linear-gradient(to right, #1c2833, #0b5345);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  box-shadow: 0px 0px 20px -10px gray;
+  width: 50vw;
+  height: 60vh;
+  margin-top: 20vh;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #1c2833;
+}
+
+.tablinks {
+  background-color: #1c2833;
+  color: cyan;
+  border-style: none;
+  border-width: 0px;
+  border-color: gray;
+  height: 40px;
+  width: 28%;
+}
+
+.tablinks:hover {
+  color: white;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: cyan 3px solid;
+}
+
+h1 {
+  font-size: 1.2em;
+  color: cyan;
+  margin: 30px 0px 30px 0px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+select,
+input {
+  background-color: #1c2833;
+  color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  width: 49%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.tab-display {
+  display: none;
+}
+
+h6 {
+  color: lightgray;
+}
+
+.inputType2 {
+  width: 100%;
+}
