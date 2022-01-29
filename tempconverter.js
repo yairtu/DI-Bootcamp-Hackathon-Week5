@@ -2,7 +2,6 @@ let celsiusInput = document.getElementById("celsius");
 let farenheitInput = document.getElementById("farenheit");
 
 let inputs = document.getElementsByClassName("inputType2");
-console.log(inputs);
 
 for (let i = 0; i < inputs.length; i++) {
   let input = inputs[i];
