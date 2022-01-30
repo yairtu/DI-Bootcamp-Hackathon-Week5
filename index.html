@@ -24,16 +24,33 @@
     <div class="wrapper">
       <!--TABS-->
       <div class="tab">
-        <button class="tablinks">CURRENCY</button>
-        <button class="tablinks">TEMPERTATURE</button>
-        <button class="tablinks">TIMEZONE</button>
+        <button
+          class="tablinks active"
+          id="curr-tab"
+          onclick="changeTab(event, 'currency-div')"
+        >
+          CURRENCY
+        </button>
+        <button
+          class="tablinks"
+          id="distance-tab"
+          onclick="changeTab(event, 'temperature-div')"
+        >
+          TEMPERATURE
+        </button>
+        <button
+          class="tablinks"
+          id="time-tab"
+          onclick="changeTab(event, 'distance-div')"
+        >
+          DISTANCE
+        </button>
       </div>
       <!--CURRENCY CONVERTER-->
-      <div class="tab-content">
+      <div class="tab-content" id="currency-div">
         <h1>CURRENCY CONVERTER</h1>
-        <div class="currency1">
-          <select id="currency" name="currency">
-            <option>select currency</option>
+        <div class="currency">
+          <select id="currencyOne" name="currency">
             <option value="AFN">Afghan Afghani</option>
             <option value="ALL">Albanian Lek</option>
             <option value="DZD">Algerian Dinar</option>
@@ -199,10 +216,15 @@
             <option value="YER">Yemeni Rial</option>
             <option value="ZMK">Zambian Kwacha</option>
           </select>
-          <input class="currency1value" type="number" placeholder="0" />
+          <input
+            id="currencyOneInput"
+            type="number"
+            placeholder="0"
+            value="1"
+          />
         </div>
-        <div class="currency2">
-          <select id="currency" name="currency">
+        <div class="currency">
+          <select id="currencyTwo" name="currency">
             <option>select currency</option>
             <option value="AFN">Afghan Afghani</option>
             <option value="ALL">Albanian Lek</option>
@@ -369,18 +391,52 @@
             <option value="YER">Yemeni Rial</option>
             <option value="ZMK">Zambian Kwacha</option>
           </select>
-          <input class="currency2value" type="number" placeholder="0" />
+          <input id="currencyTwoInput" type="number" placeholder="0" />
         </div>
       </div>
       <!--TEMP-->
-      <div class="tab-content" id="temp">
+      <div class="tab-content tab-display" id="temperature-div">
         <h1>TEMPERATURE CONVERTER</h1>
+        <div>
+          <h6>Celsius</h6>
+          <input
+            type="number"
+            placeholder="0"
+            class="inputType2"
+            id="celsius"
+          />
+        </div>
+        <div>
+          <h6>Fahrenheit</h6>
+          <input
+            type="number"
+            placeholder="0"
+            class="inputType2"
+            id="fahrenheit"
+          />
+        </div>
       </div>
-      <!--TIMEZONE-->
-      <div class="tab-content">
-        <h1>TIMEZONE CONVERTER</h1>
+      <!--DISTANCE-->
+      <div class="tab-content tab-display" id="distance-div">
+        <h1>DISTANCE CONVERTER</h1>
+        <div>
+          <h6>Miles</h6>
+          <input type="number" placeholder="0" class="inputType2" id="miles" />
+        </div>
+        <div>
+          <h6>Kilometers</h6>
+          <input
+            type="number"
+            placeholder="0"
+            class="inputType2"
+            id="kilometers"
+          />
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="tabs.js"></script>
+    <script src="tempconverter.js"></script>
+    <script src="distanceconverter.js"></script>
   </body>
 </html>
