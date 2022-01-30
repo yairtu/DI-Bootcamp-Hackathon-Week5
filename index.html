@@ -33,17 +33,24 @@
         </button>
         <button
           class="tablinks"
-          id="distance-tab"
+          id="temp-tab"
           onclick="changeTab(event, 'temperature-div')"
         >
           TEMPERATURE
         </button>
         <button
           class="tablinks"
-          id="time-tab"
+          id="distance-tab"
           onclick="changeTab(event, 'distance-div')"
         >
           DISTANCE
+        </button>
+        <button
+          class="tablinks"
+          id="weight-tab"
+          onclick="changeTab(event, 'weight-div')"
+        >
+          WEIGHT
         </button>
       </div>
       <!--CURRENCY CONVERTER-->
@@ -433,10 +440,28 @@
           />
         </div>
       </div>
+      <!--WEIGHT-->
+      <div class="tab-content tab-display" id="weight-div">
+        <h1>WEIGHT CONVERTER</h1>
+        <div>
+          <h6>Pounds</h6>
+          <input type="number" placeholder="0" class="inputType2" id="pounds" />
+        </div>
+        <div>
+          <h6>Kilograms</h6>
+          <input
+            type="number"
+            placeholder="0"
+            class="inputType2"
+            id="kilograms"
+          />
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
     <script src="tabs.js"></script>
     <script src="tempconverter.js"></script>
     <script src="distanceconverter.js"></script>
+    <script src="weightconverter.js"></script>
   </body>
 </html>
