@@ -1,6 +1,7 @@
 body {
   margin: auto;
   height: 100vh;
+  width: 100vw;
   background-image: linear-gradient(to right, #1c2833, #0b5345);
   background-size: cover;
   background-repeat: no-repeat;

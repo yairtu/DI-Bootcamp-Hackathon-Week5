@@ -1,7 +1,7 @@
 
 function changeTab(event, tabName) {
     // hide tab content divs
-    let tabContent = document.querySelectorAll(".tab-content");
+    let tabContent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabContent.length; i++) {
       tabContent[i].style.display = "none";
     }
@@ -16,3 +16,5 @@ function changeTab(event, tabName) {
     document.getElementById(tabName).style.display = "block";
     event.currentTarget.className += " active";
   }
+
+  
